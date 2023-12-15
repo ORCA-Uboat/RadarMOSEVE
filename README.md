@@ -1,1 +1,3 @@
-# RadarMOSEVE
+# RadarMOSEVE: A Spatial-Temporal Transformer Network for Radar-Only Moving Object Segmentation and Ego-Velocity Estimation
+
+This is the implementation of "RadarMOSEVE: A Spatial-Temporal Transformer Network for Radar-Only Moving Object Segmentation and Ego-Velocity Estimation". The code will be released soon...
