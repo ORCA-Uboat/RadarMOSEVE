@@ -1,0 +1,25 @@
+# 
+batch_size: 4
+epoch: 1000
+learning_rate: 1e-3
+gpu: 0
+num_point: 512
+optimizer: Adam
+weight_decay: 1e-3
+normal: False
+lr_decay: 0.5
+step_size: 10
+description: ''
+data_path: 'RADAR_EVE_PATH'
+output_dim: 1
+
+defaults:
+  - model: EVE
+
+hydra:
+  run:
+    dir: logs/eve/${model.name}
+
+  sweep:
+    dir: logs/eve
+    subdir: ${model.name}

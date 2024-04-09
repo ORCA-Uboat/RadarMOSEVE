@@ -1,0 +1,4 @@
+nneighbor: 16
+nblocks: 2
+transformer_dim: 512
+name: MOS

@@ -1,0 +1,25 @@
+# 
+batch_size: 4
+epoch: 1000
+learning_rate: 1e-3
+gpu: 0
+num_point: 512
+optimizer: Adam
+weight_decay: 1e-3
+normal: False
+lr_decay: 0.5
+step_size: 10
+description: ''
+data_path: 'RADAR_MOS_PATH'
+num_class: 2
+
+defaults:
+  - model: MOS
+
+hydra:
+  run:
+    dir: logs/mos/${model.name}
+
+  sweep:
+    dir: logs/mos
+    subdir: ${model.name}
