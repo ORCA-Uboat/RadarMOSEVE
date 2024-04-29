@@ -72,7 +72,7 @@ class MovingDataset(Dataset):
 
         data = np.loadtxt(fn).astype(np.float32).reshape(-1, 5)
         data1 = np.loadtxt(fn1).astype(np.float32).reshape(-1, 5)
-        velocity = np.loadtxt(vn1).astype(np.float32).reshape(4)[2:]
+        velocity = np.loadtxt(vn1).astype(np.float32)
             
         if self.normal_channel:
             point_set = data[:, 0:3]
